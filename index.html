@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Virag Kormoczy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a technical documentation page about Javascript.">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div class="nav-div">
+        <nav id="navbar">
+            <header>
+                <h1>Javascript Documentation</h1>
+            </header>
+            <div class="div-links">
+                <a href="#introduction" class="nav-link">Introduction</a>
+                <a href="#Javascript_and_Java" class="nav-link">JavaScript and Java</a>
+                <a href="#variables" class="nav-link">Variables</a>
+                <a href="#data_types" class="nav-link">Data types</a>
+                <a href="#strings" class="nav-link">Strings</a>
+                <a href="#reference" class="nav-link">Reference</a>
+            </div>
+        </nav>
+    </div>
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <p><em>JavaScript</em> was initially created to <q>make web pages alive</q>.</p>
+            <p>The programs in this language are called <em>scripts</em>. They can be written right in a web page’s HTML
+                and run automatically as the page loads.</p>
+            <p>Scripts are provided and executed as plain text. They don’t need special preparation or compilation to
+                run.</p>
+            <p>In this aspect, JavaScript is very different from another language called <em>Java</em>.</p>
+        </section>
+
+        <section class="main-section" id="Javascript_and_Java">
+            <header>
+                <h2>JavaScript and Java</h2>
+            </header>
+            <p>When JavaScript was created, it initially had another name: <q>LiveScript</q>. But Java was very popular
+                at that time, so it was decided that positioning a new language as a <q>younger brother</q> of Java
+                would help.</p>
+            <p>But as it evolved, JavaScript became a fully independent language with its own specification called
+                ECMAScript, and now it has no relation to Java at all.</p>
+        </section>
+
+        <section class="main-section" id="variables">
+            <header>
+                <h2>Variables</h2>
+            </header>
+            <p>Most of the time, a JavaScript application needs to work with information. Here are two examples:</p>
+            <ol>
+                <li>An online shop – the information might include goods being sold and a shopping cart.</li>
+                <li>A chat application – the information might include users, messages, and much more.</li>
+            </ol>
+            <p>Variables are used to store this information.</p>
+            <p>A variable is a <q>named storage</q> for data. We can use variables to store goodies, visitors, and other
+                data.</p>
+            <p>To create a variable in JavaScript, use the <code>let</code> keyword.</p>
+            <p>The statement below creates (in other words: <em>declares</em>) a variable with the name <q>message</q>:
+            </p>
+            <div>
+                <p><code><span>let</span> message;</code></p>
+            </div>
+            <p>Now, we can put some data into it by using the assignment operator <code>=</code> :</p>
+            <div>
+                <p><code><span>let</span> message;<br>message = 'Hello';</code></p>
+            </div>
+        </section>
+
+        <section class="main-section" id="data_types">
+            <header>
+                <h2>Data types</h2>
+            </header>
+            <p>A value in JavaScript is always of a certain type. For example, a string or a number.</p>
+            <p>There are 8 basic data types in JavaScript.</p>
+            <ul>
+                <li><code>number</code> for numbers of any kind: integer or floating-point, integers are limited by
+                    ±(2<sup>53</sup>-1)</li>
+                <li><code>bigint</code> is for integer numbers of arbitrary length.</li>
+                <li><code>string</code> for strings. A string may have zero or more characters, there’s no separate
+                    single-character type.</li>
+                <li><code>boolean</code> for <code>true</code>/<code>false</code></li>
+                <li><code>null</code> for unknown values – a standalone type that has a single value <code>null</code>.
+                </li>
+                <li><code>undefined</code> for unassigned values – a standalone type that has a single value
+                    <code>undefined</code>.
+                </li>
+                <li><code>object</code> for more complex data structures.</li>
+                <li><code>symbol</code> for unique identifiers.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="strings">
+            <header>
+                <h2>Strings</h2>
+            </header>
+            <p>In JavaScript, the textual data is stored as strings. There is no separate type for a single character.
+            </p>
+            <p>The internal format for strings is always <span>UTF-16</span>, it is not tied to the page encoding.</p>
+            <h3>Quotes</h3>
+            <p>Strings can be enclosed within either single quotes, double quotes or backticks:</p>
+            <div>
+                <p>
+                    <code>
+                        let single = 'single-quoted';</code><br>
+                        <code>let double = "double-quoted";</code><br>
+                        <code>let backticks = `backticks` ;
+                    </code>
+                </p>
+            </div>
+        </section>
+
+        <section class="main-section" id="reference">
+            <header>
+                <h2>Reference</h2>
+            </header>
+            <ul>
+                <li>All the documentation in this page is taken from <a href="https://javascript.info/"
+                        target="_blank" id="link-info">JAVASCRIPT.INFO</a></li>
+            </ul>
+
+        </section>
+    </main>
+</body>
+
+</html>
